@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<title>Первый интернет магазин</title>
+<link rel="stylesheet" type="text/css" href="style/style1.css">
+</head>
+<body>	
+  <header>
+    <div class="brand">
+      <a href="index.html">
+        <img src="images/brand.png" alt="Бренд магазина">
+      </a>
+    </div> 
+    <div class="catalog_menu">
+      <button onclick="catal_menu()" onfocus="this.blur()" class="catal_menu_button">Каталог &#9662</button>
+      <div class="search">
+      <input type="search" name="поиск по сайту" placeholder="поиск товара..."> 
+      </div>
+      <div class="search_icon">
+        <a href="#">
+        <img src="images/search_icon.png" alt="кнопка поиска" width="14" height="14">
+        </a>
+      </div>
+      <div id="catal_menu" class="catalog_menu_item">
+        <a href="#">Мужское</a>
+        <a href="#">Женское</a>
+        <a href="#">Детям</a>
+        <a href="#">Аксессуары</a>
+      </div>
+    </div>
+    <div class="cart">
+      <a href="shoping_card.html">
+        <img src="images/account_buy.png" alt="Корзина">
+      </a>
+      <div class="account_cart"> 
+      </div>
+    </div>  
+    <div>
+    	<select class="account" name="Аккаунт">
+      <option>Мой аккаунт</option>
+      <option>Корзина</option>
+      <option>Профиль</option>
+      <option>Заказы</option>
+      <option>История покупок</option>
+      </select>
+    </div>
+  </header>
+  <nav class="menu">
+    <ul class="menu_list">
+      <li class="menu_list_item">
+        <a class="chosen" href="#">Главная</a>
+      </li>
+      <li class="menu_list_item">
+        <a href="man.html">Мужчинам</a>
+      </li>
+      <li class="menu_list_item">
+        <a href="woman.html">Женщинам</a>
+      </li>
+      <li class="menu_list_item">
+        <a href="kids.html">Детям</a>
+      </li>
+      <li class="menu_list_item">
+        <a href="accessories.html">Аксессуары</a>
+      </li>
+      <li class="menu_list_item">
+        <a href="featured.html">Популярное</a>
+      </li>
+      <li class="menu_list_item">
+        <a href="hot_deals.html">Горячие предложения</a>
+      </li>
+    </ul>
+  </nav>
+  <main>
+    <section class="top">
+      <div class="title_img">
+        <img src="images/title_img.png" alt="Баннер магазина" width="1372" height="668">
+      </div>
+    </section>		
+    <section class=katalog>			
+      <figure class="leftside">
+        <a href="man.html">
+          <img src="images/for_man.png" alt="для мужчин">
+        </a>
+        <a href="accessories.html">
+          <img src="images/accesories.png" alt="для аксессуары">
+        </a>
+      </figure>
+      <figure class="rightside">
+        <a href="woman.html">
+          <img src="images/for_woman.png" alt="для женщин">
+        </a>
+        <a href="kids.html">
+          <img src="images/for_kids.png" alt="для детей">
+        </a>
+      </figure>
+    </section>
+    <aside>
+      <section class="popular-section">
+        <h2 class="product-section_title">Популярные товары <br>
+          <span class="product-section_p">Каталог популярных товаров за последнюю неделю</span></h2> 
+        <div class="product-section">
+          <div class="product">
+          </div>
+        </div>
+      </section>
+      <div class="featured_all">
+        <a href="#">Ко всем товарам</a>
+      </div>			
+      <div class="sale">
+        <a href="#"><img src="images/sale.png"></a>
+      </div>
+    </aside>
+    <aside>
+      <div class="subscribe">
+        <div class="subscribe_bckgr_1">
+          <div class="subscribe_bckgr_2">
+          </div>
+          <div class="subscribe_content">
+            <div class="subscribe_slider">
+              <div class="subscribe_slider_animation fade">
+                <img src="images/1_comment.png" width="498" height="127" alt="Первый отзыв">
+              </div>
+              <div class="subscribe_slider_animation fade">
+                <img src="images/2_comment.png" width="498" height="127" alt="Второй отзыв">
+              </div>
+              <div class="subscribe_slider_animation fade">
+                <img src="images/3_comment.png" width="498" height="127" alt="Третий отзыв">
+              </div>
+              <div class="slide_select">
+                <span class="line" onclick="currentSlide(1)"></span>
+                <span class="line" onclick="currentSlide(2)"></span>
+                <span class="line" onclick="currentSlide(3)"></span>
+              </div>
+            </div>
+            <div class="subscribe_send">
+              <div class="subscribe_title">
+                <p class="up_title">подписывайтесь</p>
+                <p class="low_title">на наши новинки и акции</p>
+              </div>
+              <div class="subscribe_email">
+                <div class="email_name">
+                  <input type="text" placeholder="Введите ваш Email" name="mail" required>
+                </div>
+                <div class="email_button">
+                  <input type="submit" value="Подписаться" onfocus="this.blur()">
+                </div>
+            </div>
+          </div>
+      </div>
+    </aside>
+    <aside>
+    	<section class="main_low">
+        <div class="brand_about">
+        	<div class="brand_img">
+        	  <a href="index.html">
+              <img src="images/brand.png" alt="Бренд магазина">
+            </a>
+          </div>
+          <div class="about_text">
+          	<img src="images/about_text.png">
+          </div>
+        </div>
+        <div class="low_menu">
+          <nav class="menu_company">
+            <ul class="menu_list_company">
+              <li class="menu_list_item_info">
+                <span>
+                  О КОМПАНИИ
+                </span>
+              </li>
+              <li class="menu_list_item_company">
+                <a href="#">Главная</a>
+              </li>
+              <li class="menu_list_item_company">
+                <a href="#">Магазин</a>
+              </li>
+              <li class="menu_list_item_company">
+                <a href="#">О нас</a>
+              </li>
+              <li class="menu_list_item_company">
+               <a href="#">Как это работает</a>
+              </li>
+              <li class="menu_list_item_company">
+                <a href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <nav class="menu_info">
+            <ul class="menu_list_info">
+              <li class="menu_list_item_info">
+                <span>
+                  ИНФОРМАЦИЯ
+                </span>
+              </li>
+              <li class="menu_list_item_info">
+                <a href="#">Правила и условия</a>
+              </li>
+              <li class="menu_list_item_info">
+                <a href="#">Политика конфиденциальности</a>
+              </li>
+              <li class="menu_list_item_info">
+                <a href="#">Как купить</a>
+              </li>
+              <li class="menu_list_item_info">
+                <a href="#">Как продать</a>
+              </li>
+              <li class="menu_list_item_info">
+                <a href="#">Реклама</a>
+              </li>
+            </ul>
+          </nav>
+          <nav class="menu_shop">
+            <ul class="menu_list_shop">
+              <li class="menu_list_item_shop">
+                <span>
+                КАТЕГОРИИ МАГАЗИНА
+                </span>
+              </li>
+              <li class="menu_list_item_shop">
+                <a href="man.html">Мужчинам</a>
+              </li>
+              <li class="menu_list_item_shop">
+                <a href="woman.html">Женщинам</a>
+              </li>
+              <li class="menu_list_item_shop">
+                <a href="kids.html">Детям</a>
+              </li>
+              <li class="menu_list_item_shop">
+                <a href="accessories.html">Аксессуары</a>
+              </li>
+              <li class="menu_list_item_shop">
+                <a href="#">Все товары</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+    	</section>
+    </aside>
+  </main>
+  <footer>
+    <div class="copyright">
+      &copy; 2017 GB Коротынский М.А.    
+    </div>
+    <div class="socialnetwork">
+      <a href="#">
+        <img src="images/footer_1.png" width="33" height="33">
+      </a>
+      <a href="#">
+        <img src="images/footer_2.png" width="33" height="33">
+      </a>
+      <a href="#">
+        <img src="images/footer_3.png" width="33" height="33">
+      </a>
+      <a href="#">
+        <img src="images/footer_4.png" width="33" height="33">
+      </a>
+      <a href="#">
+        <img src="images/footer_5.png" width="33" height="33">
+      </a>
+    </div>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="JS/Catalouge_menu.js"></script>
+  <script src="JS/subscribe_slider.js"></script>
+  <script src="JS/buy_popular.js"></script>
+</body>
+</html>
